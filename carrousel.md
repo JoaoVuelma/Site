@@ -1,1 +1,95 @@
-desenvolvo o button
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Slides</title>
+</head>
+<body>
+    <h1>Iconic Photos</h1>
+
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="img/img2.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="img/img3.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="img/img4.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="img/img5.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="img/img6.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="img/img7.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="img/img8.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="img/img9.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="img/img10.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="img/img11.jpg" alt="">
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.0/jquery.min.js" integrity="sha512-ijLvQMMXgWAO85zfDbKeoqNR7015wrZI42XGYorITKkG0sVlP4t+Rt5Dl9EKDkrPxGrWZmVCUW5oIXkVOrnCiw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+    })
+    $('.owl-carousel').owlCarousel({
+    margin:10,
+    loop:true,
+    innerWidth: auto,
+    items:3
+    })
+    </script>
+
+</body>
+</html>
+
+CSS:
+
+body {
+    text-align: center;
+    color: aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+.item {
+    display: inline-block;
+    max-width:700px;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin: 10px;
+}
